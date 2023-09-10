@@ -27,10 +27,10 @@ public class Recurtion {
 		return q4(n/10)+1;
 	}
 	public static int q5 (int x, int y) {
-		if (y==0) {
-			return y;
+		if (x<=0) {
+			return 0;
 		}
-		return q5(x-y,y)+1;
+		return 1+ q5(x-y,y);
 	}
 	public static boolean q9(int n) {
 		if ((n/10)<1) {
